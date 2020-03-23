@@ -14,11 +14,11 @@ class Init
     private $signature = '';
     private $timestemp = '';
 
-    public function __construct($appId,$domain,$secret)
+    public function __construct($appId='',$domain='',$secret='')
     {
-        $this->appId = $appId;
-        $this->domain = $domain;
-        $this->secret = $secret;
+        $this->appId = $appId?$appId:$this->appId;
+        $this->domain = $domain?$domain:$this->domain;
+        $this->secret = $secret?$secret: $this->secret;
         
     }
 

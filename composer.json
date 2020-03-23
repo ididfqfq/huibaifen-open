@@ -1,0 +1,23 @@
+{
+  "name": "huibaifen-open/huibaifen-open",
+  "description": "会佰分的公共接口",
+  "keywords": [
+    "会佰分"
+  ],
+  "type": "library",
+  "require": {
+  },
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "liubo",
+      "email": "291868060@qq.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "HuibaifenOpen\\": "src/"
+    }
+  }
+}

@@ -13,7 +13,16 @@ class Init
     private $secret = '';
     private $signature = '';
     private $timestemp = '';
-  public function exe()
+
+    public function __construct($appId,$domain,$secret)
+    {
+        $this->appId = $appId;
+        $this->domain = $domain;
+        $this->secret = $secret;
+        
+    }
+
+    public function exe()
   {
       $this->timestemp = time();
       $this->signature = md5($this->appId.$this->secret.$this->timestemp);

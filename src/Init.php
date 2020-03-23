@@ -8,9 +8,9 @@
 
 class Init
 {
-    private $appId = '13817213714';
-    private $domain = 'http://huibaifen.test';
-    private $secret = '13817213714';
+    private $appId = '';
+    private $domain = '';
+    private $secret = '';
     private $signature = '';
     private $timestemp = '';
   public function exe()
